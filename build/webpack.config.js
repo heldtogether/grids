@@ -1,3 +1,4 @@
+var bourbon = require('node-bourbon').includePaths;
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 module.exports = {
@@ -10,7 +11,7 @@ module.exports = {
         loaders: [
             {
                 test: /\.scss$/,
-                loader: ExtractTextPlugin.extract('css!sass')
+                loader: ExtractTextPlugin.extract('css!sass?includePaths[]=' + bourbon)
             }
         ]
     },
