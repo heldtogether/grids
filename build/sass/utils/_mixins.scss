@@ -1,0 +1,4 @@
+@mixin grid($span) {
+	@include calc(width, "(#{$span}/#{$columns}) * (100% - (2 * #{$margin}) - (((#{$columns} / #{$span}) - 1) * #{$gutter}))");
+	@include margin(null $gutter/2 null $gutter/2);
+}

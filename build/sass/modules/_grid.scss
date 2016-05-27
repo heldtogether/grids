@@ -1,0 +1,88 @@
+@mixin base-grid {
+	border: 1px solid;
+	float: left;
+	margin-bottom: 0.5em;
+	margin-top: 0.5em;
+	min-height: 50px;
+
+	&:first-child {
+		margin-left: $margin;
+	}
+
+	&:last-child {
+		margin-right: $margin;
+	}
+}
+
+.r {
+	@include clearfix;
+	clear: both;
+
+	&:first-of-type {
+		margin-top: 0.5em;
+	}
+
+	&:last-of-type {
+		margin-bottom: 0.5em;
+	}
+
+	.g-12 {
+		@include base-grid;
+		@include grid(12);
+	}
+
+	.g-11 {
+		@include base-grid;
+		@include grid(11);
+	}
+
+	.g-10 {
+		@include base-grid;
+		@include grid(10);
+	}
+
+	.g-9 {
+		@include base-grid;
+		@include grid(9);
+	}
+
+	.g-8 {
+		@include base-grid;
+		@include grid(8);
+	}
+
+	.g-7 {
+		@include base-grid;
+		@include grid(7);
+	}
+
+	.g-6 {
+		@include base-grid;
+		@include grid(6);
+	}
+
+	.g-5 {
+		@include base-grid;
+		@include grid(5);
+	}
+
+	.g-4 {
+		@include base-grid;
+		@include grid(4);
+	}
+
+	.g-3 {
+		@include base-grid;
+		@include grid(3);
+	}
+
+	.g-2 {
+		@include base-grid;
+		@include grid(2);
+	}
+
+	.g-1 {
+		@include base-grid;
+		@include grid(1);
+	}
+}
