@@ -1,0 +1,21 @@
+{
+  "name": "joshsephton.com",
+  "version": "2.0.0",
+  "description": "A homepage for Josh Sephton.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "./node_modules/.bin/webpack --progress --colors",
+    "build-watch": "./node_modules/.bin/webpack --progress --colors --watch"
+  },
+  "author": "Josh Sephton",
+  "license": "MIT",
+  "devDependencies": {
+    "css-loader": "^0.23.1",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "node-sass": "^3.7.0",
+    "sass-loader": "^3.2.0",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.13.1"
+  }
+}
