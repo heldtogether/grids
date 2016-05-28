@@ -1,9 +1,7 @@
 @mixin base-grid {
-	border: 1px solid;
 	float: left;
-	margin-bottom: 0.5em;
-	margin-top: 0.5em;
-	min-height: 50px;
+	min-height: 1px;
+	overflow: hidden;
 
 	&:first-child {
 		margin-left: $margin;
@@ -17,14 +15,6 @@
 .r {
 	@include clearfix;
 	clear: both;
-
-	&:first-of-type {
-		margin-top: 0.5em;
-	}
-
-	&:last-of-type {
-		margin-bottom: 0.5em;
-	}
 
 	.g-12 {
 		@include base-grid;
